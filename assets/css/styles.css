@@ -1,0 +1,46 @@
+:root{
+  --radius: 1.25rem;
+}
+
+.rounded-4 { border-radius: var(--radius) !important; }
+
+.avatar{
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.contact-tile{
+  color: inherit;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+
+.contact-tile:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0.6rem 1.2rem rgba(0,0,0,.08);
+}
+
+.card{
+  border-radius: var(--radius);
+}
+
+.project-card{
+  transition: transform .12s ease, box-shadow .12s ease;
+  cursor: pointer;
+}
+
+.project-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0.7rem 1.5rem rgba(0,0,0,.10);
+}
+
+.badge-soft{
+  border: 1px solid rgba(0,0,0,.1);
+  background: rgba(0,0,0,.03);
+  color: inherit;
+}
+
+[data-bs-theme="dark"] .badge-soft{
+  border-color: rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+}
